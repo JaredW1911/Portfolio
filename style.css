@@ -16,9 +16,9 @@ body {
     font-family: 'Courier New bold', 'Consolas', "Lucida Sans Typewriter", 'Monaco', 'Andale Mono';
     color: var(--primary);
     background: hsla(64, 41%, 92%, 1);
-    background: linear-gradient(90deg, hsla(64, 41%, 92%, 1) 0%, hsla(196, 83%, 84%, 1) 50%, hsla(305, 75%, 83%, 1) 100%);
-    background: -moz-linear-gradient(90deg, hsla(64, 41%, 92%, 1) 0%, hsla(196, 83%, 84%, 1) 50%, hsla(305, 75%, 83%, 1) 100%);
-    background: -webkit-linear-gradient(90deg, hsla(64, 41%, 92%, 1) 0%, hsla(196, 83%, 84%, 1) 50%, hsla(305, 75%, 83%, 1) 100%);
+    background: linear-gradient(90deg, hsla(64, 41%, 92%, 1) 0%, hsla(196, 83%, 84%, 1) 50%, rgb(16, 21, 172) 100%);
+    background: -moz-linear-gradient(90deg, hsla(64, 41%, 92%, 1) 0%, hsla(196, 83%, 84%, 1) 50%, rgb(17, 17, 157) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(64, 41%, 92%, 1) 0%, hsla(196, 83%, 84%, 1) 50%, rgb(14, 17, 120) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F2F3E2", endColorstr="#B2E5F8", GradientType=1 );
     line-height: 1.5;
 }
@@ -107,7 +107,7 @@ main{
 }
 
 .hero-banner h2 {
-    color:rgb(247, 5, 255);
+    color:rgb(17, 26, 128);
     margin: 0;
     padding: 5px 10px;
     font-size: 2.0rem;
@@ -479,7 +479,8 @@ main{
     max-width: 88%;
 }
 
-.flex-item {
+
+/* .flex-item {
     border: 5px solid var(--secondary);
     color: var(--tertiary);
     min-height: 150px;
@@ -493,146 +494,15 @@ main{
     background-size: 100%;
     transition: all 0.5s;
     font-size: 0.9rem;
-}
+} */
 
-.flex-item:first-child {
+/*.flex-item:first-child {
     min-height: 400px;
     flex-basis: 100%;
-}
+} *
 
-.flex-item:hover{
+/*.flex-item:hover{
     background-color: rgb(14, 212, 238);
-}
+} */
 
-.contact address {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-}
 
-.contact address a {
-    color: var(--tertiary);
-    padding: 5px;
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-style: normal;
-    background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary)100%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: bottom;
-    transition: all 0.25s ease-in;
-    margin: 0 0.2rem 0.1rem;
-    display: inline-block;
-}
-
-.contact address a:hover {
-    background-size: 100% 88%;
-    color: var(--secondary);
-}
-
- @media screen and (max-width: 980px) {
-     header{
-         padding: 0 0 10px 0;
-         justify-content: center;
-         text-align: center
-     }
-     header h1 {
-         justify-content: center;
-     }
-      .page-section > h2
-      .page-section > div{
-          flex: 0 0 100%;
-      }
-      .page-section > h2 {
-          border-right: none;
-          border-bottom: 4px dotted var(--primary);
-          margin-bottom: 20px;
-          padding-bottom: 10px;
-          text-align: left;
-          font-size: 7vw;
-      }
-}
-
-@media screen and (max-width: 980px) {
-    header {
-      padding: 0 0 10px 0;
-      justify-content: center;
-      text-align: center;
-    }
-  
-    header h1 {
-      width: 100%;
-      padding: 5px;
-      margin-bottom: 10px;
-      font-size: 10vw;
-    }
-  
-    header nav {
-      justify-content: center;
-    }
-  
-    .page-section > h2,
-    .page-section > div {
-      flex: 0 0 100%;
-    }
-  
-    .page-section > h2 {
-      border-right: none;
-      border-bottom: 4px solid var(--primary);
-      margin-bottom: 20px;
-      padding-bottom: 10px;
-      text-align: left;
-      font-size: 7vw;
-    }
-  }
-  
-  .Unit {
-    background-image: url("./Images/unit1.png");
-  }
-  
-  .pass {
-    background-image: url("./Images/pass.png");
-  }
-  
-  .day {
-    background-image: url("./Images/DPdemo.gif");
-  }
-  
-  .Ask_Oracle {
-    background-image: url("./Images/Askoracle.gif");
-  }
-  
-  .Team {
-    background-image: url("./Images/team.gif");
-  }
-
-  .noteTaker {
-    background-image: url("./Images/ntd.gif");
-  }
-
-  .Vibez {
-    background-image: url("./Images/vibez-logo.png");
-  }
-
-  @media screen and (max-width: 768px) {
-    .flex-item,
-    .flex-item:first-child {
-      flex-basis: 100%;
-    }
-  
-    .flex-item:first-child {
-      min-height: 150px;
-    }
-  
-    .hero-banner {
-      justify-content: center;
-      text-align: center;
-    }
-  
-    .contact address {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  }
